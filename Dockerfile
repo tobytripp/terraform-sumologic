@@ -22,5 +22,5 @@ VOLUME /usr/src/app/iac
 VOLUME /usr/src/app/bin
 VOLUME /root/.ssh
 
-# ENTRYPOINT ["terraform"]
+ENTRYPOINT ["/bin/sh", "-c"]
 CMD ["/bin/sh"]
