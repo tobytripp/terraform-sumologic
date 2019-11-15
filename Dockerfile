@@ -2,7 +2,7 @@ ARG TERRAFORM_VERSION=0.11.11
 ARG SUMOLOGIC_VERSION=1.1.0
 FROM hashicorp/terraform:${TERRAFORM_VERSION}
 
-ENV SUMOLOGIC_ARCHIVE=sumologic-terraform-provider_${SUMOLOGIC_VERSION}_Linux_64-bit.zip
+ENV SUMOLOGIC_ARCHIVE=sumologic-terraform-provider_1.1.0_Linux_64-bit.zip
 ENV SUMOLOGIC_URI=https://github.com/SumoLogic/sumologic-terraform-provider/releases/download/v1.1.0/${SUMOLOGIC_ARCHIVE}
 
 RUN wget ${SUMOLOGIC_URI} \
