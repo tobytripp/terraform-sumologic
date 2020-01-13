@@ -1,7 +1,7 @@
 ARG TERRAFORM_VERSION=0.12.18
 FROM hashicorp/terraform:${TERRAFORM_VERSION}
 
-ENV SUMOLOGIC_VERSION=1.1.0
+ENV SUMOLOGIC_VERSION=2.0.0
 ENV SUMOLOGIC_ARCHIVE=sumologic-terraform-provider_${SUMOLOGIC_VERSION}_Linux_64-bit.zip
 ENV SUMOLOGIC_URI=https://github.com/SumoLogic/sumologic-terraform-provider/releases/download/v${SUMOLOGIC_VERSION}/${SUMOLOGIC_ARCHIVE}
 # ENV PLUGIN_PATH=~/.terraform.d/plugins
