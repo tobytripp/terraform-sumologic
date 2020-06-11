@@ -14,7 +14,7 @@ RUN wget ${SUMOLOGIC_URI} \
               ${PLUGIN_PATH}/ \
         && rm -r ${SUMOLOGIC_ARCHIVE} sumologic-terraform-provider
 
-ENV TERRAGRUNT_VERSION=0.21.10
+ENV TERRAGRUNT_VERSION=0.23.0
 ENV TERRAGRUNT_BINARY=terragrunt_linux_amd64
 ENV TERRAGRUNT_URI=https://github.com/gruntwork-io/terragrunt/releases/download/v${TERRAGRUNT_VERSION}/${TERRAGRUNT_BINARY}
 
