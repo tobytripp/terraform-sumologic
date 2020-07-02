@@ -21,6 +21,7 @@ ENV TERRAGRUNT_URI=https://github.com/gruntwork-io/terragrunt/releases/download/
 RUN wget ${TERRAGRUNT_URI} \
         && mv ${TERRAGRUNT_BINARY} /bin/terragrunt \
         && chmod +x /bin/terragrunt
+RUN apk add bash
 
 WORKDIR /usr/src/app
 
